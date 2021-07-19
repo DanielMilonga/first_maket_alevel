@@ -190,7 +190,7 @@ a:hover {
 }
 
 .promo {
-    height: 630px;
+    height: calc(100vh - 95px);
     width: 100%;
     position: relative;
 }
@@ -210,7 +210,7 @@ a:hover {
 }
 
 .block_search-header {
-    width: 600px;
+    width: 60%;
 }
 
 .promo-tel {
@@ -372,7 +372,7 @@ a:hover {
     font-weight: 700;
     letter-spacing: -2px;
     margin-bottom: 62px;
-    width: 300px;
+    width: 70%;
 }
 
 .block-statistic-left p {
@@ -542,6 +542,10 @@ a:hover {
     margin-bottom: 84px;
 }
 
+.search_place {
+    display: flex;
+}
+
 .view-all-appartments {
     margin-left: 41px;
     width: 250px;
@@ -579,7 +583,7 @@ a:hover {
 }
 
 .how-it-works-descr {
-    width: 480px;
+    width: 40%;
     line-height: 30px;
     margin-top: 38px;
 }
@@ -797,7 +801,7 @@ a:hover {
 .block_adds .row {
     display: flex;
     justify-content: space-between;
-    height: 330px;
+    height: 100%;
     width: 100%;
 }
 
@@ -811,10 +815,15 @@ a:hover {
 
 .block_adds .row .column {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.block_adds-background-all {
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .block_adds-background {
@@ -1279,4 +1288,185 @@ a:hover {
         display: none;
     }
 
+}
+
+
+@media (max-width: 650px) {
+    .menu-add {
+        display: none;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .block_search {
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    .block_search-header {
+        text-align: center;
+        font-size: 10vw;
+        line-height: 12vw;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .promo-adr {
+        width: 50%;
+    }
+
+    .promo-tel {
+        left: 0;
+        right: auto;
+        width: 50%;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .block-statistic {
+        margin-top: 50px;
+    }
+
+    .block-statistic-right {
+        width: 100%;
+    }
+
+    .block-statistic-item {
+        width: 40%;
+    }
+
+    .sales .container h2 {
+        font-size: 10vw;
+        width: auto;
+    }
+
+    .sales .row .card {
+        width: 100%;
+    }
+
+    .sales .row .card:nth-child(2n) {
+        display: none;
+    }
+
+    .sales .container .block_search-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .view-all-appartments {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .how-it-works .container h2 {
+        font-size: 10vw;
+    }
+
+    .how-it-works .container .row {
+        margin-top: 10px;
+    }
+
+    .services {
+        margin-bottom: 0;
+    }
+
+    .services .container .services_header {
+        font-size: 10vw;
+    }
+
+    .meet .container h2 {
+        font-size: 10vw;
+    }
+
+    .meet .container .row .card {
+        width: 100%;
+    }
+
+    .meet .container .row .card:nth-child(2n){
+        display: none;
+    }
+
+    .block_adds {
+        padding-right: 0;
+    }
+
+    .block_adds .container .row .column-m {
+        display: none;
+    }
+
+    .block_adds .container .row .column {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .block_adds .container .row_second {
+        margin-top: 10px;
+    }
+
+    .block_adds .container .row_second:last-child {
+        margin-bottom: 30px;
+    }
+
+    .block_adds .row .column.left-column h3{
+        text-align: center;
+    }
+
+    .block_adds .row .column.left-column p{
+        text-align: center;
+    }
+
+    .block_adds_btn {
+        margin: 0 auto;
+    }
+    
+    .footer {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer .container .row {
+        flex-direction: column;
+    }
+
+    .footer_row_two {
+        width: 100%;
+    }
+
+    .footer .split {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .vvv {
+        margin-bottom: 10px;
+    }
+
+    .footer .block_subscribe-input {
+        text-align: center;
+    }
+
+    .footer .container .row .column:nth-child(n){
+        align-self: center;
+        text-align: center;
+    }
+
+    .footer .container .row.footer_row_two .column p{
+        margin-top: 10px;
+    }
+
+    .footer .container .row.footer_row_two .column+.column{
+        display: none;
+    }
 }

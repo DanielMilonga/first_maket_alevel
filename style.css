@@ -92,7 +92,7 @@ html {
 
 .container {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -176,7 +176,7 @@ a:hover {
     justify-content: center;
     padding: 10px 15px;
     text-align: center;
-    width: 150px;
+    max-width: 150px;
     border-radius: 5px;
     background-color: #ffcc01;
     border: 1px solid #ffcc01;
@@ -222,8 +222,8 @@ a:hover {
     bottom: 0;
     right: 300px;
     background-color: #ffcc01;
-    width: 300px;
-    height: 80px;
+    width: 25%;
+    height: 15%;
 }
 
 .promo-tel:hover {
@@ -254,8 +254,8 @@ a:hover {
     bottom: 0;
     right: 0;
     background-color: #ffcc01;
-    width: 300px;
-    height: 80px;
+    width: 25%;
+    height: 15%;
 }
 
 .promo-adr:hover {
@@ -299,8 +299,8 @@ a:hover {
 
 .block_search-input {
     border: none;
-    width: 365px;
-    height: 70px;
+    width: 40%;
+    min-height: 70px;
     padding: 10px 10px 10px 30px;
     background: url(img/search.png) no-repeat,
     white;
@@ -315,8 +315,8 @@ a:hover {
 }
 
 .block_search-btn {
-    width: 115px;
-    height: 70px;
+    min-width: 100px;
+    min-height: 70px;
     background: #ffcc01;
     font-size: 15px;
     font-weight: 600;
@@ -354,7 +354,6 @@ a:hover {
 
 .block-statistic {
     margin-top: 145px;
-    padding-right: 66px;
 }
 
 .block-statistic .container {
@@ -394,8 +393,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 50%;
     background-color: #f6f5f4;
 }
 
@@ -439,7 +438,7 @@ a:hover {
     font-size: 40px;
     color: #273e44;
     line-height: 50px;
-    width: 500px;
+    width: 50%;
 }
 
 .sales .row {
@@ -454,15 +453,15 @@ a:hover {
 }
 
 .sales .row .card {
-    width: 352px;
-    height: 500px;
+    width: 30%;
+    height: 50%;
     box-shadow: 0 0 10px 1px rgb(118, 117, 117, 0.5);
-    cursor: pointer;
 }
 
 .sales .row .card .item-img {
     height: 380px;
     background-color: #b1d7e8;
+    cursor: pointer
 }
 
 .sales .row .card .item-img_descr {
@@ -475,6 +474,13 @@ a:hover {
     font-size: 15px;
     padding-top: 27px;
     padding-bottom: 27px;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.item-img_descr h3:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
 }
 
 .item-img_descr .information {
@@ -517,22 +523,22 @@ a:hover {
     box-shadow: 0 0 10px 1px rgb(118, 117, 117);
 }
 
-.sales .row .card:hover .item-img {
+/* .sales .row .card:hover .item-img {
     background-color: #f6f5f4;
 }
 
 .sales .row .card:hover .item-img_descr {
     background-color: #b1d7e8;
     color: #f6f5f4;
-}
+} */
 
-.sales .row .card:hover .bathroom {
+/* .sales .row .card:hover .bathroom {
     color: black;
 }
 
 .sales .row .card:hover .bed {
     color: black;
-}
+} */
 
 .sales .block_search-main {
     margin-top: 61px;
@@ -542,14 +548,19 @@ a:hover {
     margin-bottom: 84px;
 }
 
-.search_place {
+.sales .search_place {
     display: flex;
+    width: 80%;
+}
+
+.sales .block_search-btn {
+    min-width: 100px;
 }
 
 .view-all-appartments {
     margin-left: 41px;
-    width: 250px;
-    height: 70px;
+    min-width: 250px;
+    min-height: 70px;
     background-color: white;
     color: black;
     border-radius: 5px;
@@ -595,8 +606,8 @@ a:hover {
 }
 
 .how-it-works .block_works {
-    width: 350px;
-    height: 374px;
+    width: 30%;
+    min-height: 374px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 10px 1px rgb(118, 117, 117, 0.5);
@@ -674,19 +685,20 @@ a:hover {
 .services_main {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .services_header {
     font-size: 40px;
     font-weight: 700;
     color: #1f373d;
-    width: 100px;
+    width: 100%;
 }
 
 .services_subheader {
     font-size: 13px;
     line-height: 30px;
-    width: 300px;
+    min-width: 300px;
 }
 
 .services_descr {
@@ -719,14 +731,14 @@ a:hover {
     font-size: 40px;
     font-weight: 700;
     color: #1f373d;
-    width: 400px;
+    min-width: 400px;
     margin-bottom: 30px;
 }
 
 .meet .container p {
     font-size: 13px;
     line-height: 30px;
-    width: 380px;
+    max-width: 380px;
 }
 
 .meet .row {
@@ -737,10 +749,9 @@ a:hover {
 }
 
 .meet .row .card {
-    width: 352px;
-    height: 500px;
+    width: 30%;
+    min-height: 500px;
     box-shadow: 0 0 10px 1px rgb(118, 117, 117, 0.5);
-    cursor: pointer;
 }
 
 .meet .row .card:hover {
@@ -748,12 +759,13 @@ a:hover {
 }
 
 .meet .row .card .card-img {
-    height: 380px;
+    min-height: 380px;
     background-color: #cdccce;
+    cursor: pointer;
 }
 
 .meet .row .card .card-img_descr {
-    height: 100px;  
+    min-height: 100px;  
     padding-left: 24px;
     padding-right: 20px;
 }
@@ -778,6 +790,7 @@ a:hover {
 .card-img_descr .information .facebook {
     margin-top: -7px;
 }
+
 
 .card-img_descr .information .twitter {
     margin-top: -7px;
@@ -843,8 +856,13 @@ a:hover {
     justify-content: center;
     font-size: 18px;
     font-weight: 700;
-    width: 330px;
-    height: 80px;
+    min-width: 330px;
+    min-height: 80px;
+    cursor: pointer;
+}
+
+.block_adds-subbackground:hover {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.34);
 }
 
 .block_adds-subbackground-second {
@@ -872,6 +890,7 @@ a:hover {
     color: #1f373d;
     font-size: 25px;
 }
+
 
 .block_adds .row .column.right-column p {
     margin-top: 40px;
@@ -901,8 +920,8 @@ a:hover {
 .block_adds .block_adds_btn {
     cursor: pointer;
     margin-top: 20px;
-    width: 240px;
-    height: 82px;
+    max-width: 240px;
+    min-height: 82px;
     background-color: #1f373d;
     display: flex;
     flex-direction: column;
@@ -945,13 +964,37 @@ a:hover {
     align-self: flex-end;
 }
 
+.footer .row .column.column_search {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffcc01;
+}
+
+.footer .row .column.column_search .search_btn_arrow:hover{
+    background-color: #fbff01;
+}
+
 .footer h2 {
     font-size: 40px;
 }
 
 .footer .block_subscribe-input{
-    width: 475px;
-    height: 70px;
+    min-width: 475px;
+    min-height: 70px;
+}
+
+.footer .search_btn_arrow {
+    min-width: 90px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer .search_btn_arrow .arrow_subscribe {
+    max-width: auto;
+    max-height: 30px;
 }
 
 .footer .vvv {
@@ -981,7 +1024,7 @@ a:hover {
 
 .footer .footer_row_two .column {
     align-self: flex-start;
-    width: 140px;
+    max-width: 140px;
 }
 
 .footer .footer_row_two h2 {
@@ -1141,6 +1184,14 @@ a:hover {
      .nav-link:hover {
         opacity: 0.8;
      }
+     
+     .promo-adr {
+        width: 30%;
+     }
+
+     .promo-tel {
+        width: 30%;
+     }
 
      .block-statistic {
          padding-right: 0;
@@ -1218,7 +1269,7 @@ a:hover {
     .how-it-works .block_works {
         margin-top: 30px;
         width: 100%;
-        height: 300px;
+        min-height: 300px;
         overflow: hidden;
         position: relative;
         box-shadow: 0 0 10px 1px rgb(118, 117, 117, 0.5);
@@ -1277,7 +1328,7 @@ a:hover {
     }
     
     .meet .container p {
-        width: 100%;
+        max-width: 100%;
     }
 
     .meet .container .card {
@@ -1288,6 +1339,20 @@ a:hover {
         display: none;
     }
 
+    .footer .block_subscribe-input{
+        min-width: 300px;
+        min-height: 70px;
+    }
+    
+    .footer .search_btn_arrow {
+        min-width: 50px;
+        min-height: 70px;
+    }
+    
+    .footer .search_btn_arrow .arrow_subscribe {
+        max-width: auto;
+        max-height: 30px;
+    }
 }
 
 
@@ -1341,7 +1406,7 @@ a:hover {
     }
 
     .sales .container h2 {
-        font-size: 10vw;
+        font-size: 8vw;
         width: auto;
     }
 
@@ -1427,6 +1492,7 @@ a:hover {
     }
 
     .block_adds_btn {
+        min-width: 70%;
         margin: 0 auto;
     }
     

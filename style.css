@@ -459,13 +459,13 @@ a:hover {
 }
 
 .sales .row .card .item-img {
-    height: 380px;
+    min-height: 380px;
     background-color: #b1d7e8;
     cursor: pointer
 }
 
 .sales .row .card .item-img_descr {
-    height: 120px;  
+    min-height: 120px;  
     padding-left: 24px;
     padding-right: 20px;
 }
